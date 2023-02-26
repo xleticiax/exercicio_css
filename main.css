@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header { 
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+    justify-content: space-between; /*não está funcionando, descobrir o pq*/
+}
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    display:inline; /*deixa os itens da página lado a lado, block deixa um embaixo do outro e none para de exibir*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}   
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+.container {
+    width: 1366px;
+    margin: 0 auto 0 auto; /*cima direita baixo esquerda>*/
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap; /*pra manter um máximo de itens aparecendo em tela pelo width dos articles>*/
+    justify-content: space-between; /*não está funcionando, descobrir o pq*/
+}
+
+.articles article img {
+    /*height: 180px;*/ /*quando a altura é delimitada, a largura se adequa automaticamente>*/
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: #fff;
+    padding: 6px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1); /*rgba = red green blue e alpha*/
+}
+
+#sports .articles article a {
+    background-color: #009432;
+}
+
+#economy {
+    background-color: #f8f59f;
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a;
+}
+
+#tec {
+    background-color: rgb(186, 175, 196);
+}
+
+#tec .articles article a {
+    background-color: rgb(156, 37, 156);
+}
+
+#entretenimento {
+    background-color: rgb(255, 172, 223);
+}
+
+#entretenimento .articles article a {
+    background-color: rgb(255, 9, 202);
+}
